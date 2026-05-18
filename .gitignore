@@ -1,0 +1,29 @@
+# Среда разработки и кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+
+# ОГРОМНЫЕ файлы данных (Защита памяти Claude)
+# Мы игнорируем все CSV и PCAP, кроме демонстрационного примера
+*.csv
+*.pcap
+*.log
+!data/dataset_sample.csv
+
+# Обученные ML-модели (они бинарные и тяжелые, Клоду они не нужны)
+*.pkl
+*.joblib
+*.onnx
+*.h5
+
+# Логи и системные файлы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+docker/data/
